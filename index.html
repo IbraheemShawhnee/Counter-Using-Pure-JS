@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        background: #fefae0;
+      }
+      .body{
+        height: 500px;
+      }
+      .container{
+        font-size: 50px;
+        border: 0.5px solid #d4a373;
+        border-radius: 20%;
+        box-shadow: -10px 10px 20px 5px #ccd5ae;
+        padding: 30px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .title{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-family: 'Cairo', sans-serif;
+         color: #d4a373;
+      }
+      .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+      }
+      .result{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-bottom: 20px;
+        color: #ccd5ae;
+      }
+      .decressbtn{
+        background-color: #d4a373;
+        border: none;
+        font-size: 20px;
+        color: #faedcd;
+        font-style: bold;
+        cursor: pointer;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 3px solid #e9edc9;
+        padding: 10px;
+      }
+      .restbtn{
+        background-color: #d4a373;
+        border: none;
+        font-size: 20px;
+        color: #faedcd;
+        font-style: bold;
+        cursor: pointer;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 3px solid #e9edc9;
+        padding: 10px;
+      }
+      .increasebtn{
+        background-color: #d4a373;
+        border: none;
+        font-size: 20px;
+        color: #faedcd;
+        font-style: bold;
+        cursor: pointer;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 3px solid #e9edc9;
+        padding: 10px;
+      }
+      footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #d4a373;
+        color: white;
+        text-align: center;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      footer a{
+        color: white;
+        background-color: #d4a373;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="container">
+    <div class="title">
+      Counter
+    </div>
+    <div class="result">
+      <span type="number" id="result">0</span>
+    </div>
+    <div class="buttons">
+        <button class="decressbtn">Decrease</button>
+        <button class="restbtn">Rest</button>
+        <button class="increasebtn">Increase</button>
+    </div>
+    </div>
+    <footer>Copy reserved for <a href="mailto:ibraheemmohanad2019@gmail.com">Ibraheem Mohanad Shawhnee</a></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
